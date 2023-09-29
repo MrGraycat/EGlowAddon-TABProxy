@@ -1,0 +1,4 @@
+name: EGlowAddon-Proxy
+version: '${version}'
+main: me.mrgraycat.eglowaddon.EGlowAddon
+description: A plugin to communicate with eGlow on the backend server for proper glow colors.
