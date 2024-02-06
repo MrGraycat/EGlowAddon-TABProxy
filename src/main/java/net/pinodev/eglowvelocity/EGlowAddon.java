@@ -62,11 +62,11 @@ public class EGlowAddon{
     public void onPluginMessageFromBackend(PluginMessageEvent event) {
         // Ensure the identifier is what you expect before trying to handle the data
 
-        ByteArrayDataInput in = ByteStreams.newDataInput(event.getData());
-
         if (event.getIdentifier() != IDENTIFIER) {
             return;
         }
+        ByteArrayDataInput in = ByteStreams.newDataInput(event.getData());
+
         if(in.readUTF().equals("TABProxyUpdateRequest")) {
             if (EGlowAddon.getTabExpansion() != null) {
                 EGlowAddon.getTabExpansion().updateColor(UUID.fromString(in.readUTF()), in.readUTF());
