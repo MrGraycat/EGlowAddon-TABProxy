@@ -1,0 +1,1 @@
+{"id":"eglowaddon-velocity","name":"eglowaddon-velocity","version":"4.0","authors":["PinoOG"],"dependencies":[{"id":"tab","optional":false}],"main":"net.pinodev.eglowvelocity.EGlowAddon"}
